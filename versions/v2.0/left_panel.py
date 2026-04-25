@@ -25,7 +25,7 @@ def setup_left_panel(self, centralwidget):
     """
     # First vertical layout (left)
     self.verticalLayoutWidget_3 = QtWidgets.QWidget(centralwidget)
-    self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(50, 50, 921, 979))
+    self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(60, 30, 631, 741))
     self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
 
     self.verticalLayout_1 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)

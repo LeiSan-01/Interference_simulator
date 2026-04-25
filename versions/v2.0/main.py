@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
         """
         """
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1920, 1080)
+        MainWindow.resize(1440, 810)
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
