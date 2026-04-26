@@ -102,7 +102,7 @@ def setup_tabs(self):
     self.image_3.setGeometry(QtCore.QRect(50, 40, 741, 491))
     self.image_3.setText("")
 
-    route3 = base_route.filePath("images/Patro_de_difraccio.png")
+    route3 = base_route.filePath("images/slitdist.png")
     self.image_3.setPixmap(QtGui.QPixmap(route3))
     self.image_3.setScaledContents(True)
     self.image_3.setObjectName("image_3")
