@@ -14,8 +14,8 @@ If your interested on how the physical simulation was built check out the **Docu
 ### Dependencies
 In this project we used the following dependencies to implement the simulation.
 
-|Python libraries|Custom modules|Other|
-|:---|:---:|
+|Python libraries|Other|
+|:---|:---|
 |python -v 3.14.0 <br>- os<br>- sys<br>- time<br>- PyQt5<br>- numpy<br>- matplotlib|(...)|
 
 ### Instructions of use
