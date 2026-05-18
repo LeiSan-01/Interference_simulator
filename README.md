@@ -28,7 +28,7 @@ To use this program we provide the following altervatives:
 First, you'll need to have Python installed to run the program. Then open de terminal and run this line to change the directory to the location of **main.py**. If you download the repository in another location change the direction appropiately.
 
 ```
-cd C:\Users\userName\Downloads\Interference-simulator
+cd C:\Users\userName\Downloads\Interference_simulator-main
 ```
 
 Then, run **main.py**.
