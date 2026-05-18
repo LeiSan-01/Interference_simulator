@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>diffractionpattern.png</file>
+        <file>wavelength.png</file>
+        <file>screendist.png</file>
+        <file>slitdist.png</file>
+        <file>slitwidth.jpeg</file>
+    </qresource>
+</RCC>

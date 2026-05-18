@@ -6,6 +6,7 @@
 
 from PyQt5 import QtCore, QtWidgets, QtGui
 import numpy as np
+import images.resources_rc
 
 from mucho_texto import retranslateUi
 from left_panel import setup_left_panel

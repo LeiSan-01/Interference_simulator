@@ -1,4 +1,12 @@
+import sys
+import images.resources_rc
+
 from PyQt5 import QtWidgets, QtCore, QtGui
+from PyQt5.QtGui import QPixmap
+from PyQt5.QtCore import QDir
+
+#print(QDir(":/").entryList())
+#print(QDir(":/images").entryList()) #Actually check if the photos are anywhere to be seen
 
 def setup_right_panel(self, centralwidget):
     """Setup the right side with title and tabs"""
@@ -34,7 +42,8 @@ def setup_tabs(self):
 
     # Create all tabs
     
-    base_route = QtCore.QDir.current()  # for image import from the images dir we extract the path
+    base_route = QtCore.QFileInfo(sys.argv[0]).absolutePath()  # for image import from the images dir we extract the path
+    # I actually don't need the dir logi anymore but I'll leave it for now
 
     #---EXPERIMENT---
     self.tab = QtWidgets.QWidget()
@@ -44,8 +53,9 @@ def setup_tabs(self):
     self.image_0.setGeometry(QtCore.QRect(50, 40, 741, 491))
     self.image_0.setText("")
     
-    route0 = base_route.filePath("images/Patro_de_difraccio.png")
-    self.image_0.setPixmap(QtGui.QPixmap(route0))
+    
+    #route0 = QtCore.QDir(base_route).filePath("images/diffractionpattern.png")     use qrc to embed photos in the binary (YAY)
+    self.image_0.setPixmap(QtGui.QPixmap(":/images/diffractionpattern.png"))
     self.image_0.setScaledContents(True)
     self.image_0.setObjectName("image_0")
 
@@ -66,8 +76,8 @@ def setup_tabs(self):
     self.image_1.setGeometry(QtCore.QRect(50, 40, 741, 491))
     self.image_1.setText("")
     
-    route1 = base_route.filePath("images/wavelength.png")
-    self.image_1.setPixmap(QtGui.QPixmap(route1))
+    #route1 = QtCore.QDir(base_route).filePath("images/wavelength.png")
+    self.image_1.setPixmap(QtGui.QPixmap(":/images/wavelength.png"))
     self.image_1.setScaledContents(True)
     self.image_1.setObjectName("image_1")
     self.tabWidget.addTab(self.tab1, "")
@@ -84,8 +94,8 @@ def setup_tabs(self):
     self.image_2.setGeometry(QtCore.QRect(50, 40, 741, 491))
     self.image_2.setText("")
     
-    route2 = base_route.filePath("images/screendist.png")
-    self.image_2.setPixmap(QtGui.QPixmap(route2))
+    #route2 = QtCore.QDir(base_route).filePath("images/screendist.png")
+    self.image_2.setPixmap(QtGui.QPixmap(":/images/screendist.png"))
     self.image_2.setScaledContents(True)
     self.image_2.setObjectName("image_2")
     self.tabWidget.addTab(self.tab2, "")
@@ -102,8 +112,8 @@ def setup_tabs(self):
     self.image_3.setGeometry(QtCore.QRect(50, 40, 741, 491))
     self.image_3.setText("")
 
-    route3 = base_route.filePath("images/slitdist.png")
-    self.image_3.setPixmap(QtGui.QPixmap(route3))
+    #route3 = QtCore.QDir(base_route).filePath("images/slitdist.png")
+    self.image_3.setPixmap(QtGui.QPixmap(":/images/slitdist.png"))
     self.image_3.setScaledContents(True)
     self.image_3.setObjectName("image_3")
     self.tabWidget.addTab(self.tab3, "")
@@ -120,8 +130,8 @@ def setup_tabs(self):
     self.image_4.setGeometry(QtCore.QRect(50, 40, 741, 491))
     self.image_4.setText("")
     
-    route4 = base_route.filePath("images/slit_width.jpeg")
-    self.image_4.setPixmap(QtGui.QPixmap(route4))
+    #route4 = QtCore.QDir(base_route).filePath("images/slitwidth.jpeg")
+    self.image_4.setPixmap(QtGui.QPixmap(":/images/slitwidth.jpeg"))
     self.image_4.setScaledContents(True)
     self.image_4.setObjectName("image_4")
     self.tabWidget.addTab(self.tab5, "")
